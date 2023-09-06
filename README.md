@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+Tamagochi  game 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+General Features:
+-the tamagochi companion has a health status and a happiness status
+-two buttons are available, Feed and Play which interact with the health and the happiness status, 
+each adding 10 points to the corespondent status
+-the statuses both decrement by 10 every five seconds
+-a log in and a sign in page is available for existing or new users
+the companion's statuses will not be modified if the  game is stoped, user logged out, or the server
+turned off.
+-the users credentials are recognised even is the server is turned off, or the game is stoped.
+-a third button is available in the game page named 'Exit' which logs out user and the
+- log in tab is displayed
 
-## Available Scripts
+Key features in implementation:
+    -the credentials used for logging in are stored  locally in the file "users.json"
+    -a node server is used to handle the requests between the file and the back-end
 
-In the project directory, you can run:
+Instructions for activating the server are below:
+    -install node.js from the website https://nodejs.org/en/download
+    -open a terminal, navigate to the project directory ('src' directory inside 'reactfirst' directory) and run the following comands
+        npm init -y
+        npm install express
+    -Ensure you have the 'server.js', 'users.json', 'login.html', and 'signup.html', 'script,js',
+'index.html'. 'styles.css', 'tamagochi.png' ,  files in the same directory.
+    -start the  Node.js server by running the following command int the terminal
+        node server.js
+    -Now, the server should be running, 
+and you can access the login page at http://localhost:3000/login.html where u can play the game
+    - to close  the server select the terminal and press the buttons Ctrl+C and the server should close
+ and the game cannot be played.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
